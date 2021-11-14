@@ -28,6 +28,7 @@
           align-items-center
           justify-content-center justify-content-md-between
           py-3
+          border-bottom
         "
       >
         <div>
@@ -41,25 +42,38 @@
         </div>
       </header>
     </div>
-    <div class="border-bottom border-top">
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-around mb-md-0">
-        <li class="links rounded-2 ms-1 btn-success">
-          <a href="#about" class="nav-link px-2 link-light">Apie įmonę</a>
-        </li>
-        <li class="links rounded-2 ms-1 btn-success">
-          <a href="#marsrutai" class="nav-link px-2 link-light">Maršrutai</a>
-        </li>
-      </ul>
-    </div>
 
     <section id="landing">
-      <div class="text-center">
-        <h1 class="display-5 fw-bold primary-text">
-          Krovinių gabenimas į Skandinavijos šalis ir atgal
-        </h1>
-      </div>
-      <div class="px-4 my-5 text-center" id="land-img">
-        <img src="/IMG/manukas.jpg" class="img-fluid rounded" alt="..." />
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="/IMG/manukas.jpg"
+              class="d-block mx-lg-auto img-fluid rounded"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              Krovinių gabenimas į Skandinavijos šalis ir atgal
+            </h1>
+            <p class="lead">
+              Vežame įvairius (taip pat ir dalinius) krovinius į Švediją,
+              Norvegiją ir atgal į Lietuvą.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#contact" class="btn btn-success btn-lg px-4 me-md-2">
+                Kontaktai
+              </a>
+              <a href="#about" class="btn btn-outline-secondary btn-lg px-4">
+                Apie įmonę
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -72,9 +86,7 @@
         <div class="col-lg-6 mx-auto">
           <p class="lead my-4">
             Transporto įmonė UAB „Transpeda“ įkurta 1997 metais. Įmonėje dirba
-            patikimi ir patyrę vairuotojai – ekspeditoriai. Vežame įvairius
-            (taip pat ir dalinius) krovinius į Švediją, Norvegiją ir atgal į
-            Lietuvą.
+            patikimi ir patyrę vairuotojai – ekspeditoriai.
           </p>
           <p class="lead my-4">
             Mašinos – tentinės (88-120m3). Klientui pageidaujant, sutvarkome
@@ -235,7 +247,7 @@
       </div>
     </section>
 
-    <section #contact class="d-flex justify-content-center">
+    <section id="contact" class="d-flex justify-content-center">
       <div class="container px-4 py-5" id="icon-grid">
         <h2 class="pb-2 border-bottom text-success">Susisiekti</h2>
 
