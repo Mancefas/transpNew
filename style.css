@@ -14,8 +14,8 @@
 
 #about {
   min-height: 100vh;
-  background-color: var(--background-secondary);
-  border-radius: 7px;
+  width: 95vw;
+  margin: auto;
 }
 
 #marsrutai {
