@@ -1,0 +1,29 @@
+:root {
+  --background: #ffffff;
+  --background-secondary: #f1f1f1;
+  --background-other: #607d8b;
+}
+
+/* .links {
+  background-color: var(--background-other);
+} */
+
+#land-img {
+  margin: auto;
+}
+
+#about {
+  min-height: 100vh;
+  background-color: var(--background-secondary);
+  border-radius: 7px;
+}
+
+#marsrutai {
+  margin: auto;
+  min-height: 80vh;
+  width: 85vw;
+}
+
+.primary-text {
+  color: var(--background-other);
+}
