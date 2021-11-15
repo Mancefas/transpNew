@@ -18,7 +18,7 @@ const copyEmailToClipboard = () => {
     });
   copiedDiv.insertAdjacentHTML(
     "afterbegin",
-    '<div class="alert alert-success" role="alert">Nukopijuota į iškarpinę</div>'
+    '<div class="alert alert-success" role="alert">Email nukopijuotas. Galite įklijuoti į gavėjo laukelį </div>'
   );
 
   emailBtn.innerText = "transpeda@transpeda.lt";
