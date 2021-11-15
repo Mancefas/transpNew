@@ -4,6 +4,11 @@
   --background-other: #607d8b;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 /* .links {
   background-color: var(--background-other);
 } */
