@@ -1,6 +1,5 @@
 const copiedDiv = document.getElementById("copied");
-const copiedElm = document.getElementById("copd");
-console.log(copiedElm);
+const emailBtn = document.getElementById("email-contact");
 
 const copyEmailToClipboard = () => {
   if (!navigator.clipboard) {
@@ -21,9 +20,12 @@ const copyEmailToClipboard = () => {
     "afterbegin",
     '<div class="alert alert-success" role="alert">Nukopijuota į iškarpinę</div>'
   );
+
+  emailBtn.innerText = "transpeda@transpeda.lt";
+
   setTimeout(() => {
     copiedDiv.remove(0);
-  }, 700);
+  }, 3000);
 };
 
 const todaysYear = new Date().getFullYear();
