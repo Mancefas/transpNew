@@ -22,6 +22,8 @@ const copyEmailToClipboard = () => {
   );
 
   emailBtn.innerText = "transpeda@transpeda.lt";
+  emailBtn.classList.remove("btn-lg");
+  emailBtn.classList.remove("px-4");
 
   setTimeout(() => {
     copiedDiv.remove(0);
