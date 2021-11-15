@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+#logo:hover {
+  transform: scale(0.95);
+}
+
 /* .links {
   background-color: var(--background-other);
 } */
