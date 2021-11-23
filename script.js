@@ -17,17 +17,9 @@ const copyEmailToClipboard = () => {
       console.log("Something went wrong", err);
     });
   copiedDiv.insertAdjacentHTML(
-    "afterbegin",
-    '<div class="alert alert-success" role="alert">Email nukopijuotas.</div>'
+    "beforeend",
+    '<i class="fas fa-check-square text-success"></i>'
   );
-
-  emailBtn.innerText = "transpeda@transpeda.lt";
-  emailBtn.classList.remove("btn-lg");
-  emailBtn.classList.remove("px-4");
-
-  setTimeout(() => {
-    copiedDiv.remove(0);
-  }, 3000);
 };
 
 // ENG version copied email
@@ -39,7 +31,7 @@ const copyEmailToClipboardEng = () => {
     // Clipboard API not available
     return;
   }
-  const emailAdress = document.getElementById("email").innerHTML;
+  const emailAdress = document.getElementById("email-eng").innerHTML;
 
   navigator.clipboard
     .writeText(emailAdress)
@@ -49,18 +41,12 @@ const copyEmailToClipboardEng = () => {
     .catch((err) => {
       console.log("Something went wrong", err);
     });
+    
   copiedDivEng.insertAdjacentHTML(
-    "afterbegin",
-    '<div class="alert alert-success" role="alert">Email copied</div>'
+    "beforeend",
+    '<i class="fas fa-check-square text-success"></i>'
   );
 
-  emailBtnEng.innerText = "transpeda@transpeda.lt";
-  emailBtnEng.classList.remove("btn-lg");
-  emailBtnEng.classList.remove("px-4");
-
-  setTimeout(() => {
-    copiedDivEng.remove(0);
-  }, 3000);
 };
 
 const todaysYear = new Date().getFullYear();
