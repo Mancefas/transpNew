@@ -22,9 +22,17 @@
   height: fit-content;
 }
 
+#landing img {
+  max-height: 50vh;
+  height: fit-content;
+  width: auto;
+  max-width: 90vw;
+  object-fit: cover;
+}
+
 #about {
   min-height: 100vh;
-  width: 95vw;
+  max-width: 85vw;
   margin: auto;
 }
 
@@ -41,9 +49,4 @@
 .languageIMG {
   width: auto;
   height: 1rem;
-}
-
-.landing-img {
-  width: 45vw;
-  height: auto;
 }
