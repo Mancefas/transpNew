@@ -19,6 +19,7 @@
 
 #landing {
   min-height: 85vh;
+  height: fit-content;
 }
 
 #about {
