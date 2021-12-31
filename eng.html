@@ -33,7 +33,9 @@
     <div class="container">
       <header
         class="
-          d-flex
+        d-md-flex
+        text-center
+          flex-sm-row
           flex-wrap
           align-items-center
           justify-content-center justify-content-md-between
@@ -47,17 +49,19 @@
           </a>
         </div>
 
-        <div></div>
-
-        <div class="col-md-3 text-end">
-          <a href="/index.html"
-            ><i class="fas fa-language fa-2x btn-outline-success"></i
-          ></a>
-        </div>
+        <ul class="nav nav-pills justify-content-center align-items-center">
+          
+          <li class="nav-item"><a href="#contacts-eng" class="nav-link text-success">Contacts</a></li>
+          <li class="nav-item"><a href="/" >
+            <img class="languageIMG" src="/IMG/lt.png" alt="" >
+          
+          </a></a></li>
+        </ul>
       </header>
     </div>
 
     <section id="landing">
+      
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6 m-auto">
@@ -71,32 +75,20 @@
             />
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
+            <h1 class="display-5 fw-bold lh-1 mb-3 font-monospace">
               Transporting cargo between Lithuania and Scandinavia
             </h1>
             <p class="lead text-center">
               Full and partial loads transportation.
             </p>
-            <div
-              id="copied-eng"
-              class="d-flex align-items-center justify-content-end"
-            ></div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
               <a
                 href="tel:+37069965951"
                 type="button"
-                class="btn btn-primary btn-lg px-4 gap-3 btn-success"
+                class="btn btn-primary btn-sm px-4 gap-3 btn-success"
               >
-                <i class="fas fa-phone-alt"></i> Contact us
+                <i class="fas fa-phone-alt"></i>Contact us for transportation
               </a>
-              <button
-                onclick="copyEmailToClipboardEng()"
-                id="email-contact-eng"
-                type="button"
-                class="btn btn-primary btn-lg px-4 gap-3 btn-success"
-              >
-                <i class="far fa-envelope"></i> Contact us
-              </button>
             </div>
           </div>
         </div>
@@ -118,7 +110,7 @@
         "
       >
         <div class="my-5 text-center">
-          <h3 class="display-5 fw-bold">
+          <h3 class="display-5 fw-bold font-monospace">
             <i class="fas fa-warehouse text-success"></i> About the Company
           </h3>
 
@@ -144,7 +136,6 @@
                 >JSC „Nordcarrier Baltic“</a
               >.
             </p>
-            <div class="d-flex justify-content-end mx-5" id="copied"></div>
           </div>
         </div>
       </div>
@@ -152,7 +143,7 @@
 
     <section id="marsrutai">
       <div class="text-center my-4">
-        <h3 class="display-5 fw-bold">
+        <h3 class="display-5 fw-bold font-monospace">
           <i class="fas fa-road text-success"></i> Routes
         </h3>
       </div>
@@ -183,7 +174,7 @@
         </div>
 
         <div class="col">
-          <div class="card rounded-3 shadow-sm">
+          <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">In Sweden</h4>
             </div>
@@ -220,9 +211,11 @@
       </div>
     </section>
 
-    <section id="contact" class="d-flex justify-content-center">
+    
+
+    <section id="contacts-eng" class="d-flex justify-content-center">
       <div class="container px-4 py-5" id="icon-grid">
-        <h2 class="pb-2 border-bottom text-success">Contact Us</h2>
+        <h2 class="pb-2 border-bottom text-success">Contact us</h2>
 
         <div
           class="
@@ -232,27 +225,39 @@
           "
         >
           <div class="col d-flex flex-column align-items-start">
-            <i class="far fa-envelope fa-lg text-success"></i>
-            <div>
-              <h4 class="fw-bold mb-0">By email</h4>
-              <p id="email">transpeda@transpeda.lt</p>
+            <a href="mailto: transpeda@transpeda.lt?" target="_blank" class="link-dark text-decoration-none">
+              <i class="far fa-envelope fa-lg text-success"></i>
+              <div>
+                <h4 class="fw-bold mb-0 ">By email</h4>
+                <p id="email-eng">transpeda@transpeda.lt</p>
+              </div>
+            </a>
+            <div id="copied-eng">
+              <button onclick="copyEmailToClipboardEng()"
+              id="email-contact-eng"
+              type="button" class="btn btn-outline-success btn-sm">Copy email address</button>
             </div>
           </div>
+          
           <div class="col d-flex flex-column align-items-start">
-            <i class="fas fa-mobile-alt fa-lg text-success"></i>
-            <div>
-              <h4 class="fw-bold mb-0">By phone</h4>
-              <p>+370 699 20607</p>
-            </div>
-          </div>
-          <div class="col d-flex flex-column align-items-start">
-            <i class="fas fa-mobile-alt fa-lg text-success"></i>
-            <div>
-              <h4 class="fw-bold mb-0">By phone</h4>
-              <p>+370 699 65951</p>
-            </div>
-          </div>
+            <a href="tel:+37069920607" class="link-dark text-decoration-none">
 
+              <i class="fas fa-mobile-alt fa-lg text-success"></i>
+              <div>
+                <h4 class="fw-bold mb-0">By phone</h4>
+                <p>+370 699 20607</p>
+              </div>
+            </a>
+          </div>
+          <div class="col d-flex flex-column align-items-start">
+            <a href="tel:+37069965951" class="link-dark text-decoration-none">
+              <i class="fas fa-mobile-alt fa-lg text-success"></i>
+              <div>
+                <h4 class="fw-bold mb-0">By phone</h4>
+                <p>+370 699 65951</p>
+              </div>
+            </a>
+          </div>
           <div class="col d-flex flex-column align-items-start">
             <i class="fas fa-building fa-lg text-success"></i>
             <div>

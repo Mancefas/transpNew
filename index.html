@@ -34,38 +34,46 @@
     <div class="container">
       <header
         class="
-          d-flex
+        d-md-flex
+        text-center
+          flex-sm-row
           flex-wrap
           align-items-center
           justify-content-center justify-content-md-between
           py-3
           border-bottom
+          m-auto
         "
       >
+       
         <div>
           <a href="/">
             <img
-              src="/IMG/transpeda_logo_nuo.png"
+              src="/IMG/transpedaKaled.png"
               alt="Transpeda logotipas"
               id="logo"
             />
           </a>
         </div>
 
-        <div></div>
+        <ul class="nav nav-pills justify-content-center align-items-center">
+          
+          <li class="nav-item"><a href="#contacts" class="nav-link text-success">Kontaktai</a></li>
+          <li class="nav-item"><a href="/eng.html" >
+            <img class="languageIMG" src="/IMG/en.png" alt="" >
+          
+          </a></a></li>
+        </ul>
 
-        <div class="col-md-3 text-end">
-          <a href="/eng.html"
-            ><i class="fas fa-language fa-2x btn-outline-success"></i
-          ></a>
-        </div>
+        
+
       </header>
     </div>
 
     <section id="landing">
-      <div class="container col-xxl-8 px-4 py-5">
+      <div class="container col-xxl-8 px-4 py-5 ">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6 m-auto">
+          <div class="col-10 col-sm-8 col-lg-6 m-auto text-center">
             <img
               src="/IMG/manukas.jpg"
               class="d-block mx-lg-auto img-fluid rounded"
@@ -75,39 +83,29 @@
               loading="lazy"
             />
           </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
+          <div class="col-10 col-sm-8 col-lg-6 m-auto text-center">
+            <h1 class="display-5 fw-bold lh-1 mb-3 font-monospace">
               Krovinių gabenimas į Skandinavijos šalis ir atgal
             </h1>
             <p class="lead text-center">
               Vežame įvairius (taip pat ir dalinius) krovinius į Švediją,
               Norvegiją ir atgal į Lietuvą.
             </p>
-            <div
-              id="copied"
-              class="d-flex align-items-center justify-content-end"
-            ></div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
               <a
                 href="tel:+37069965951"
                 type="button"
-                class="btn btn-primary btn-lg px-4 gap-3 btn-success"
+                class="btn btn-primary btn-sm px-4 gap-3 btn-success"
               >
-                <i class="fas fa-phone-alt"></i> Susisiekti
+                <i class="fas fa-phone-alt"></i> Susisiekti dėl pervežimo
               </a>
-              <button
-                onclick="copyEmailToClipboard()"
-                id="email-contact"
-                type="button"
-                class="btn btn-primary btn-lg px-4 gap-3 btn-success"
-              >
-                <i class="far fa-envelope"></i> Susisiekti
-              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <section id="about">
       <div
@@ -124,8 +122,8 @@
         "
       >
         <div class="my-5 text-center">
-          <h3 class="display-5 fw-bold">
-            <i class="fas fa-warehouse text-success"></i> Apie įmonę
+          <h3 class="display-5 fw-bold font-monospace">
+            <i class="fas fa-warehouse text-success "></i> Apie įmonę
           </h3>
 
           <div class="col-lg-6 mx-auto">
@@ -143,12 +141,12 @@
               PVM mokėtojo kodas: LT350411416
             </p>
             <p class="lead my-4">
-              Our general expeditor in Lithuania –
+              Mūsų ekspeditorius –
               <a href="http://nordcarrier.lt/" target="blank"
-                >JSC „Nordcarrier Baltic“</a
+                >UAB „Nordcarrier Baltic“</a
               >.
             </p>
-            <div class="d-flex justify-content-end mx-5" id="copied"></div>
+           
           </div>
         </div>
       </div>
@@ -156,7 +154,7 @@
 
     <section id="marsrutai">
       <div class="text-center my-4">
-        <h3 class="display-5 fw-bold">
+        <h3 class="display-5 fw-bold font-monospace">
           <i class="fas fa-road text-success"></i> Maršrutai
         </h3>
       </div>
@@ -187,7 +185,7 @@
         </div>
 
         <div class="col">
-          <div class="card rounded-3 shadow-sm">
+          <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Švedijoje</h4>
             </div>
@@ -224,7 +222,7 @@
       </div>
     </section>
 
-    <section id="contact" class="d-flex justify-content-center">
+    <section id="contacts" class="d-flex justify-content-center">
       <div class="container px-4 py-5" id="icon-grid">
         <h2 class="pb-2 border-bottom text-success">Susisiekti</h2>
 
@@ -236,25 +234,38 @@
           "
         >
           <div class="col d-flex flex-column align-items-start">
-            <i class="far fa-envelope fa-lg text-success"></i>
-            <div>
-              <h4 class="fw-bold mb-0">El. paštu</h4>
-              <p id="email">transpeda@transpeda.lt</p>
+            <a href="mailto: transpeda@transpeda.lt?subject=pervežimo užklausimas" target="_blank" class="link-dark text-decoration-none">
+              <i class="far fa-envelope fa-lg text-success"></i>
+              <div>
+                <h4 class="fw-bold mb-0 ">El. paštu</h4>
+                <p id="email">transpeda@transpeda.lt</p>
+              </div>
+            </a>
+            <div id="copied">
+              <button onclick="copyEmailToClipboard()"
+              id="email-contact"
+              type="button" class="btn btn-outline-success btn-sm">Nukopijuoti el.paštą</button>
             </div>
           </div>
+          
           <div class="col d-flex flex-column align-items-start">
-            <i class="fas fa-mobile-alt fa-lg text-success"></i>
-            <div>
-              <h4 class="fw-bold mb-0">Mob. telefonu</h4>
-              <p>8 699 20607</p>
-            </div>
+            <a href="tel:+37069920607" class="link-dark text-decoration-none">
+
+              <i class="fas fa-mobile-alt fa-lg text-success"></i>
+              <div>
+                <h4 class="fw-bold mb-0">Mob. telefonu</h4>
+                <p>8 699 20607</p>
+              </div>
+            </a>
           </div>
           <div class="col d-flex flex-column align-items-start">
-            <i class="fas fa-mobile-alt fa-lg text-success"></i>
-            <div>
-              <h4 class="fw-bold mb-0">Mob. telefonu</h4>
-              <p>8 699 65951</p>
-            </div>
+            <a href="tel:+37069965951" class="link-dark text-decoration-none">
+              <i class="fas fa-mobile-alt fa-lg text-success"></i>
+              <div>
+                <h4 class="fw-bold mb-0">Mob. telefonu</h4>
+                <p>8 699 65951</p>
+              </div>
+            </a>
           </div>
           <div class="col d-flex flex-column align-items-start">
             <i class="fas fa-building fa-lg text-success"></i>

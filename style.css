@@ -36,3 +36,13 @@
 .primary-text {
   color: var(--background-other);
 }
+
+.languageIMG {
+  width: auto;
+  height: 1rem;
+}
+
+.landing-img {
+  width: 45vw;
+  height: auto;
+}
